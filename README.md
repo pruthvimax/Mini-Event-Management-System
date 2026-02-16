@@ -3,3 +3,5 @@ Mini Event Management System in Go
 
 # Progress 
 Created 2 folders  
+
+# Progress
