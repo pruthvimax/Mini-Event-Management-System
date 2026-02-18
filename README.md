@@ -1,9 +1,10 @@
 # Mini-Event-Management-System
 Mini Event Management System in Go
 
-# Progress 
-Created 2 folders  
+# Day 1 Progress - Formatted Folder Structure
 
+Today we created folders of the system Such as Frontend,Backend,Services and Files
+ 
 ---
 
 ## Day 2 Progress — User Registration Feature
