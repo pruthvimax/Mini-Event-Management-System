@@ -4,8 +4,9 @@ import (
 	"github.com/pruthvimax/user-service/database"
 	"github.com/pruthvimax/user-service/handlers"
 	"github.com/gin-gonic/gin"
-)
+	"github.com/pruthvimax/user-service/middleware"
 
+)
 
 func main() {
 	database.ConnectDB()
@@ -19,6 +20,9 @@ func main() {
 	})
 
 	router.POST("/users/register", handlers.RegisterUser)
+	router.POST("/users/login", handlers.LoginUser)
+	router.GET("/users/profile", middleware.AuthMiddleware(), handlers.UserProfile)
+
 
 	router.Run(":8000")
 }

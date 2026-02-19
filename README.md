@@ -42,3 +42,28 @@ Users are successfully stored inside the `eventdb.users` collection in MongoDB A
 * MongoDB Atlas (Cloud Database)
 * Postman Desktop API Testing
 * GitHub Version Control
+
+
+---
+
+## Day 3 Progress — Authentication System
+
+Today we implemented secure authentication using JSON Web Tokens (JWT).
+
+### Implemented Endpoints
+
+POST /users/login
+GET /users/profile (Protected Route)
+
+### Features
+
+* User login verification
+* JWT token generation
+* Middleware-based authorization
+* Protected API access using token
+
+### Result
+
+Only authenticated users can access protected routes by providing a valid JWT token in the Authorization header.
+
+This completes the authentication layer of the system.
