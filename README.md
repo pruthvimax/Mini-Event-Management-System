@@ -67,3 +67,31 @@ GET /users/profile (Protected Route)
 Only authenticated users can access protected routes by providing a valid JWT token in the Authorization header.
 
 This completes the authentication layer of the system.
+
+---
+
+## Day 4 Progress — Event Service Microservice
+
+Today we implemented the core Event Management functionality.
+
+### New Microservice
+
+Event Service (runs on port 8001)
+
+### Implemented Endpoints
+
+POST /events/create (Protected)
+GET /events
+
+### Features
+
+* Separate microservice for event handling
+* MongoDB Atlas integration
+* JWT-based authorization
+* Only authenticated users can create events
+* Public event listing
+
+### Result
+
+The system now supports real event creation and retrieval.
+This marks the transition from an authentication server to a complete Event Management backend.
